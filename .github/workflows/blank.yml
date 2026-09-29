@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Upload EXE Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wubi-lex-exe
+          path: ./**/*.exe
